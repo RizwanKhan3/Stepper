@@ -5,7 +5,7 @@ export const Accordian = ({ item, num, curOpen, onOpen }) => {
   const isOpen = num === curOpen
 
   const handleToggle = () => {
-    onOpen(num)
+    onOpen(isOpen ? null : num)
   }
   return (
     <div className='flex flex-col justify-center items-center   shadow-md mt-10 m-auto bg-slate-50 w-6/12'>
